@@ -1,0 +1,18 @@
+---
+# this manifest deploys the rsoter application
+applications:
+  - name: roster
+    memory: 1G
+    instances: 1
+    services:
+      - rosterdb
+      - rosterLogs
+      - newrelic
+    random-route: true
+    buildpack: java_buildpack
+    env:
+      ROSTER_A: roster_a
+      ROSTER_B: roster_b
+      ROSTER_C: roster_c
+      APP_VERSION: green
+    timeout: 120
