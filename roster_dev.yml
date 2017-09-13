@@ -8,6 +8,7 @@ applications:
       - rosterdb
       - rosterLogs
       - newrelic
+      - configserver
     random-route: true
     buildpack: java_buildpack
     env:
