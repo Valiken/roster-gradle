@@ -16,4 +16,5 @@ applications:
       ROSTER_B: roster_b
       ROSTER_C: roster_c
       APP_VERSION: green
+      SPRING_PROFILES_ACTIVE: cloud
     timeout: 120
